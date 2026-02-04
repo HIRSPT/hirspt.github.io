@@ -1,12 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My GitHub Website</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer & Online Services</title>
+    <meta name="description" content="Professional web development, SEO services, and online appointment booking services.">
+    <meta name="keywords" content="Web Development, SEO, Online Appointment, Contact Forms, Services">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>Hello World 🌍</h1>
-  <p>My GitHub Pages site is live!</p>
+
+<!-- Navbar -->
+<header>
+    <div class="container">
+        <h1 class="logo">MyWebPro</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#appointment">Appointment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <h2>Your Digital Success Starts Here</h2>
+        <p>Professional Web Development, SEO & Online Services</p>
+        <a href="#appointment" class="btn">Book Appointment</a>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Custom websites, responsive design, fast loading performance.</p>
+            </div>
+            <div class="card">
+                <h3>SEO Optimization</h3>
+                <p>Improve your search engine ranking and drive more traffic.</p>
+            </div>
+            <div class="card">
+                <h3>Online Forms & Booking</h3>
+                <p>Appointment scheduling, contact forms and automated responses.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Appointment Form -->
+<section id="appointment" class="appointment">
+    <div class="container">
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form">
+            <label>Name</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Phone</label>
+            <input type="tel" name="phone" required>
+
+            <label>Select Date & Time</label>
+            <input type="datetime-local" name="datetime" required>
+
+            <label>Service Needed</label>
+            <select name="service">
+                <option>Web Development</option>
+                <option>SEO Optimization</option>
+                <option>General Consultation</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label>Name</label>
+            <input type="text" name="name" required>
+            
+            <label>Email</label>
+            <input type="email" name="email" required>
+            
+            <label>Message</label>
+            <textarea name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>© 2026 MyWebPro. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
